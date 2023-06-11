@@ -10,3 +10,38 @@ html{
 body{
     overflow-x: hidden;
 }
+.bignavbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    list-style: none;
+}
+.slidecarousel{
+    background-color: #EDF1F3;
+}
+#carouselExampleAutoplaying {
+    width: 80%;
+    margin: 0 auto;
+    line-height: 95px;
+}
+.carousel-item{
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 50px;
+    gap: 10px; 
+    width: 224px;
+    height: 53px;
+}

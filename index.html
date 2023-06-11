@@ -1,62 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-    <head>
-        <title>index</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <!-- <link href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css> -->
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-    <body>
-       <header id="home">
+
+<head>
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" href="public/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar -->
+    <header id="home">
         <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 border-bottom">
             <div class="container-fluid">
-              <a class="navbar-brand fs-2" href="#home"><h1><span class="text-secondary" >Ministore.</span></h1></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center">
-                  <li class="nav-item">
-                    <a class="nav-link active text-info" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                     Pages
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#services">First</a></li>
-                      <li><a class="dropdown-item" href="#services">Second</a></li>
-                      <li><a class="dropdown-item" href="#services">Third</a></li>
+                <a class="navbar-brand fs-2" href="#home">
+                    <h1><span class="text-black"
+                            style="font-size: 33px;font-weight: 300;font-family: Jost;">Ministore.</span></h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center" style="gap: 50px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" style="color:#72AEC8;">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" style="color: #272727;">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#services">First</a></li>
+                                <li><a class="dropdown-item" href="#services">Second</a></li>
+                                <li><a class="dropdown-item" href="#services">Third</a></li>
+                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" style="color:#272727">About</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" style="color:#272727">Blog </a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" style="color:#272727">Contact </a>
+                        </li>
+                        <div class="nav-icons">
+                            <li>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-user"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </li>
+                        </div>
+                        <li>
                     </ul>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#contact">About</a>
-                    </li>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about">Blog </a>
-                </li>
-                </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about">Contact </a>
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </li>
-                  <li style="font-size: 10px;">
-                    <i class="fa-solid fa-user"></i>
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </li>
-                </ul>
-              </div>
+                </div>
             </div>
-          </nav>
+        </nav>
+        <!-- navbar -->
 
-        </body>
-          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <!--content-->
+        <div class="slidecarousel">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" >
+                        <div class="text-button">
+                            <h1 style="font-size: 83px;font-family: Jost;font-weight: 300;color: #272727;margin-bottom: 30px;">YOUR PRODUCTS ARE GREAT.
+                            </h1>
+                            <button class="button" style="color:white;background-color:black;">Shop
+                                Product</button>
+                        </div>
+                        <img src="public/img/watchpng.png" class="d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text-button">
+                            <h1 style="font-size: 83px;font-family: Jost;font-weight: 300;color: #272727;margin-bottom: 30px;">YOUR PRODUCTS ARE GREAT.
+                            </h1>
+                            <button class="button" style="color:white;background-color:black;">Shop
+                                Product</button>
+                        </div>
+                        <img src="public/img/watchpng.png" class="d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text-button">
+                            <h1 style="font-size: 83px;font-family: Jost;font-weight: 300;color: #272727;margin-bottom: 30px;">YOUR PRODUCTS ARE GREAT.
+                            </h1>
+                            <button class="button" style="color:white;background-color:black;">Shop
+                                Product</button>
+                        </div>
+                        <img src="public/img/watchpng.png" class="d-block" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
         
+        <!--content-->
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
