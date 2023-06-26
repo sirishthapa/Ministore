@@ -73,67 +73,34 @@
                 </div>
             </div>
         </nav>
+        </header>
         <!-- navbar -->
 
-        <!--content-->
-        <!-- <div class="container">
-            <div class="carousel">
-                <div class="carousel-item">
-                    <div class="carousel-wrapper">
-                        <div class="text-button">
-                            <h1
-                                style="font-size: 83px;font-family: Jost;font-weight: 300;color: #272727;margin-bottom: 30px;">
-                                YOUR PRODUCTS ARE GREAT.
-                            </h1>
-                            <button class="button" style="color:white;background-color:black;">Shop
-                                Product</button>
-                        </div>
-                        <div>
-                            <img src="public/img/watchpng.png" class="d-block" alt="...">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-wrapper">
-                        <div class="text-button">
-                            <h1
-                                style="font-size: 83px;font-family: Jost;font-weight: 300;color: #272727;margin-bottom: 30px;">
-                                YOUR PRODUCTS ARE GREAT.
-                            </h1>
-                            <button class="button" style="color:white;background-color:black;">Shop
-                                Product</button>
-                        </div>
-                        <div>
-                            <img src="public/img/watchpng.png" class="d-block" alt="...">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
         <div class="photo-section-top">
-            <div class="photo">
-                <div class="text-button">
-                    <h1 style="font-size: 83px;font-family: Jost;font-weight: 300;color: #272727;margin-bottom: 30px;">
-                        YOUR PRODUCTS <br>ARE GREAT.
-                    </h1>
-                    <button class="button" style="color:white;background-color:black;">Shop
-                        Product</button>
+            <div class="hero-img container">
+                <div class="hero-photo photo">
+                    <div class="text-button">
+                        <h1>
+                            YOUR PRODUCTS ARE GREAT.
+                        </h1>
+                        <button class="button" style="color:white;background-color:black;">Shop
+                            Product</button>
+                    </div>
+                    <div>
+                        <img src="public/img/watchpng.png" class="d-block" alt="...">
+                    </div>
                 </div>
-                <div>
-                    <img src="public/img/watchpng.png" class="d-block" alt="...">
-                </div>
-            </div>
-            <div class="photo">
-                <div class="text-button">
-                    <h1 style="font-size: 83px;font-family: Jost;font-weight: 300;color: #272727;margin-bottom: 30px;">
-                        YOUR PRODUCTS ARE<br> GREAT.
-                    </h1>
-                    <button class="button" style="color:white;background-color:black;">Shop
-                        Product</button>
-                </div>
-                <div>
-                    <img src="public/img/watchpng.png" class="d-block" alt="...">
+                <div class="hero-photo photo">
+                    <div class="text-button">
+                        <h1>
+                            YOUR PRODUCTS ARE GREAT.
+                        </h1>
+                        <button class="button" style="color:white;background-color:black;">Shop
+                            Product</button>
+                    </div>
+                    <div>
+                        <img src="public/img/watchpng.png" class="d-block" alt="...">
+                    </div>
                 </div>
             </div>
         </div>
@@ -696,8 +663,10 @@
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script>
             // hero slider
-            $('.carousel').slick({
+            $('.hero-img').slick({
                 arrows: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
             });
             $('.photo-section').slick({
                 dots: true,
@@ -735,41 +704,41 @@
                     // instead of a settings object
                 ]
             });
-            $('.photo-section-top').slick({
-                dots: false,
-                arrows: false,
-                infinite: false,
-                speed: 300,
-                slidesToShow: 1,
-                slidesToScroll: 4,
-                responsive: [
-                    {
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3,
-                            infinite: true,
-                            dots: true
-                        }
-                    },
-                    {
-                        breakpoint: 600,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    }
-                    // You can unslick at a given breakpoint now by adding:
-                    // settings: "unslick"
-                    // instead of a settings object
-                ]
-            });
+            // $('.photo-section-top').slick({
+            //     dots: false,
+            //     arrows: false,
+            //     infinite: false,
+            //     speed: 300,
+            //     slidesToShow: 1,
+            //     slidesToScroll: 4,
+            //     responsive: [
+            //         {
+            //             breakpoint: 1024,
+            //             settings: {
+            //                 slidesToShow: 3,
+            //                 slidesToScroll: 3,
+            //                 infinite: true,
+            //                 dots: true
+            //             }
+            //         },
+            //         {
+            //             breakpoint: 600,
+            //             settings: {
+            //                 slidesToShow: 2,
+            //                 slidesToScroll: 2
+            //             }
+            //         },
+            //         {
+            //             breakpoint: 480,
+            //             settings: {
+            //                 slidesToShow: 1,
+            //                 slidesToScroll: 1
+            //             }
+            //         }
+            //         // You can unslick at a given breakpoint now by adding:
+            //         // settings: "unslick"
+            //         // instead of a settings object
+            //     ]
+            // });
         </script>
 </body>
