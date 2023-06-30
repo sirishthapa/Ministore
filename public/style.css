@@ -531,16 +531,85 @@ ul {
 }
 
 .categories h5 {
-		font-family: 'Jost';
-		color: #272727;
-		font-size: 20px;
-		text-decoration: underline #848484;
+	font-family: 'Jost';
+	color: #272727;
+	font-size: 20px;
+	text-decoration: underline #848484;
 
-	
+
 
 	p {
 		font-family: 'Lato';
 		color: #373737;
 		font-size: 28px;
 	}
+}
+
+/* product page */
+
+.product-page {
+	display: flex;
+	gap: 30px;
+}
+
+.product-page p {
+	font-family: 'Lato ';
+	font-size: 18px;
+	font-weight: 400;
+
+}
+
+.cart h4 {
+	font-family: 'Jost';
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.product-page .watch-photo img {
+	width: 640px;
+	object-fit: cover;
+	height: 80vh;
+}
+
+.inc-dec .quantity {
+	text-align: center;
+	width: 70px;
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 10px;
+	transition: 0.3s;
+	border: none;
+}
+
+.increment {
+	font-size: 16px;
+	width: 30px;
+	height: 30px;
+	border: none;
+}
+
+.decrement {
+	font-size: 16px;
+	width: 30px;
+	height: 30px;
+	border: none;
+}
+
+/* product page's description */
+.description-heading {
+	display: flex;
+	justify-content: center;
+	gap: 90px;
+}
+
+ .long-line {
+	border-top: 1px solid #cdcdcd;
+}
+
+.description-body p{
+	font-family: 'Lato';
+	font-size: 16px;
+	font-weight: 400;
+	color: #3A3A3A;
+
 }
