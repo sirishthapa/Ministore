@@ -10,6 +10,7 @@ html {
 
 body {
 	overflow-x: hidden;
+	font-family: 'Jost';
 }
 
 .bignavbar {
@@ -42,7 +43,7 @@ body {
 
 .text-button h1 {
 	font-size: 60px;
-	font-family: Jost;
+	font-family: 'Jost';
 	font-weight: 300;
 	color: #272727;
 	margin-bottom: 30px;
@@ -94,14 +95,14 @@ body {
 }
 
 .col h4 {
-	font-family: "Jost";
+	font-family: 'Jost';
 	font-weight: 400;
 	font-size: 20px;
 	color: #272727;
 }
 
 .col p {
-	font-family: "Lato";
+	font-family: 'Lato';
 	font-style: normal;
 	font-weight: 300;
 	font-size: 16px;
@@ -133,14 +134,14 @@ body {
 }
 
 .mobile-heading h2 {
-	font-family: Jost;
+	font-family: 'Jost';
 	color: #272727;
 	font-weight: 400;
 	font-size: 30px;
 }
 
 .mobile-heading p {
-	font-family: "Lato";
+	font-family: 'Lato';
 	font-weight: 500;
 	font-size: 14px;
 	color: #272727;
@@ -166,7 +167,7 @@ body {
 }
 
 .price {
-	font-family: jost;
+	font-family: 'Jost';
 	font-weight: 400;
 	display: flex;
 	gap: 90px;
@@ -224,14 +225,14 @@ body {
 }
 
 .contain .sale p {
-	font-family: "Jost";
+	font-family: 'Jost';
 	font-weight: 300;
 	font-size: 30px;
 	margin-bottom: 0;
 }
 
 .contain .sale h1 {
-	font-family: "Jost";
+	font-family: 'Jost';
 	font-weight: 300;
 	font-size: 70px;
 }
@@ -255,14 +256,14 @@ body {
 }
 
 .container .photos-section p {
-	font-family: "Jost";
+	font-family: "'Jost'";
 	font-weight: 400;
 	font-size: 13px;
 	color: #848484;
 }
 
 .container .photos-section h5 {
-	font-family: "Jost";
+	font-family: 'Jost';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -293,7 +294,7 @@ body {
 }
 
 .tempus p {
-	font-family: "Lato";
+	font-family: 'Lato';
 	font-style: normal;
 	font-weight: 300;
 	font-size: 34px;
@@ -313,13 +314,18 @@ body {
 	background-color: #272727;
 	display: flex;
 	justify-content: space-around;
-	min-height: 200px;
+	padding: 40px 30px;
 	align-items: center;
 	margin-bottom: 30px;
+
+	@media only screen and (max-width:760px) {
+		flex-direction: column;
+		align-items: flex-start;
+	}
 }
 
 .suscribe .sus-text h2 {
-	font-family: "Jost";
+	font-family: 'Jost';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 30px;
@@ -327,7 +333,7 @@ body {
 }
 
 .suscribe .sus-text p {
-	font-family: "Lato";
+	font-family: 'Lato';
 	font-weight: 300;
 	font-size: 16px;
 	color: #ffffff;
@@ -335,12 +341,17 @@ body {
 
 .suscribe .form {
 	display: flex;
+
+	@media only screen and (max-width:760px) {
+		flex-direction: column;
+		width: 100%;
+	}
 }
 
 .shop {
 	display: flex;
 	justify-content: center;
-	font-family: Jost;
+	font-family: 'Jost';
 	font-weight: 400;
 	font-size: 30px;
 	margin-bottom: 60px;
@@ -351,14 +362,19 @@ body {
 	gap: 1.5rem;
 	height: 244px;
 	margin-bottom: 90px;
+
+	@media only screen and (max-width:760px) {
+		flex-direction: column;
+		flex-wrap: wrap;
+		height: auto;
+	}
 }
 
 .images .photo {
 	width: 20%;
 
 	@media only screen and (max-width:760px) {
-		flex-direction: column;
-		flex-wrap: wrap;
+		width: 100%;
 	}
 }
 
@@ -372,7 +388,7 @@ body {
 .container .contact {
 	display: flex;
 	justify-content: space-around;
-	font-family: "Lato";
+	font-family: 'Lato';
 	font-style: normal;
 	font-weight: 300;
 	font-size: 16px;
@@ -394,7 +410,7 @@ body {
 	display: flex;
 	align-items: center;
 	gap: 30px;
-	font-family: "Lato";
+	font-family: 'Lato';
 	font-style: normal;
 	font-weight: 300;
 	font-size: 16px;
@@ -405,7 +421,7 @@ body {
 	display: flex;
 	align-items: center;
 	gap: 30px;
-	font-family: "Lato";
+	font-family: 'Lato';
 	font-style: normal;
 	font-weight: 300;
 	font-size: 16px;
@@ -413,7 +429,7 @@ body {
 }
 
 .copyright p {
-	font-family: "Lato";
+	font-family: 'Lato';
 	font-style: normal;
 	font-weight: 300;
 	font-size: 16px;
@@ -440,5 +456,91 @@ body {
 
 	.container .copyright {
 		text-align: center;
+	}
+}
+
+/* aboutus */
+.aboutus-heading {
+	background-color: #EDF1F3;
+	padding: 40px 20px;
+
+	@media only screen and (max-width:760px) {
+		width: 100%;
+	}
+}
+
+.container .aboutus-h1 {
+	text-align: center;
+	color: #272727;
+	font-family: 'Jost';
+	font-size: 83px;
+	font-weight: 300;
+
+	@media only screen and (max-width:760px) {
+		font-size: 40px;
+	}
+}
+
+.aboutus-hero {
+	display: flex;
+	align-items: center;
+	gap: 70px;
+	margin-bottom: 60px;
+}
+
+.aboutus-hero .aboutus-video img {
+	height: 400px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* shop*/
+
+.shop-heading {
+	display: flex;
+	justify-content: space-between;
+
+	p {
+		font-size: 16px;
+		font-family: 'Lato';
+		font-weight: 300;
+	}
+
+}
+
+.shop-body {
+	display: flex;
+	gap: 30px;
+
+	.search-button {
+		display: flex;
+		align-items: flex-start;
+	}
+}
+
+.shop-photo-section {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 60px;
+	margin-bottom: 90px;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.categories h5 {
+		font-family: 'Jost';
+		color: #272727;
+		font-size: 20px;
+		text-decoration: underline #848484;
+
+	
+
+	p {
+		font-family: 'Lato';
+		color: #373737;
+		font-size: 28px;
 	}
 }
