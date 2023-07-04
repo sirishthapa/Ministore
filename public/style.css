@@ -319,7 +319,8 @@ body {
 	justify-content: space-around;
 	padding: 40px 30px;
 	align-items: center;
-	margin-bottom: 30px;
+	margin-bottom: 120px;
+	margin-top: 120px;
 
 	@media only screen and (max-width:760px) {
 		flex-direction: column;
@@ -651,6 +652,50 @@ ul {
 .td-cross svg {
 	height: 40px;
 	width: 35px;
+}
+
+.carttotal-table {
+	display: flex;
+	align-items: center;
+	width: 530px;
+	justify-content: space-between;
+}
+
+.carttotal-wrapper {
+	margin-top: 80px;
+}
+
+.carttotal-table p {
+	font-family: 'Lato';
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.carttotal-buttons button {
+	padding: 16px 50px;
+	border-radius: none;
+}
+
+.carttotal-buttons {
+	margin-bottom: 120px;
+	margin-top: 20px;
+}
+
+.form-check {
+	margin-bottom: 10px !important;
+}
+
+.form-check-input:checked {
+	background-color: #72AEC8 !important;
+	border-color: #72AEC8 !important;
+	accent-color: #72AEC8 !important;
+}
+
+.form-check-label {
+	font-family: 'Lato';
+	font-weight: 300;
+	font-size: 16px;
+	color: #3A3A3A;
 }
 
 /* checkout */
