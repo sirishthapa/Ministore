@@ -18,12 +18,13 @@ decrementButton.addEventListener('click', () => {
 });
 
 
-// Get the element and the button
-var elementToRemove = document.querySelector('.table');
-var removeButton = document.getElementById('mysvg');
-
-// Add click event listener to the button
-removeButton.addEventListener('click', function() {
-  // Remove the element
-  elementToRemove.remove();
-});
+// Get the cross icons div
+const removeButtons = document.querySelectorAll(".td-cross")
+// loop through all the divs with td-cross class
+for (let button of removeButtons) {
+  // add click event listener to individual divs
+  button.addEventListener("click", () => {
+    // remove the tr element
+    button.parentElement.parentElement.remove()
+  })
+}
