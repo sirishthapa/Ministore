@@ -532,6 +532,7 @@ body {
 ul {
 	list-style: none;
 	padding-left: 0 !important;
+	margin-bottom: 4rem !important;
 }
 
 .categories h5 {
