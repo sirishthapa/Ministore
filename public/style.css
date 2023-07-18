@@ -16,6 +16,10 @@ body {
 	overflow-x: hidden;
 }
 
+a {
+	text-decoration: none !important;
+  }
+
 .bignavbar {
 	display: flex;
 	align-items: center;
@@ -161,7 +165,7 @@ body {
 
 .photo-section .photo {
 	/* width: 25%; */
-	margin-inline: 20px;
+	margin-right: 20px;
 }
 
 .photo-section .photo img {
@@ -708,7 +712,7 @@ ul {
 /*contact us*/
 .contactus {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .contact-info h3 {
