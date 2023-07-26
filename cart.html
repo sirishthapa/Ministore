@@ -34,7 +34,8 @@
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center" style="gap: 50px;">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html" style="color:#72AEC8;">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html"
+                                style="color:#72AEC8;">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -92,7 +93,6 @@
                         <th scope="col" style="font-weight: 400;">QUANTITY</th>
                         <th scope="col" style="font-weight: 400;">SUBTOTAL</th>
                         <th scope="col"></th>
-
                     </tr>
                 </thead>
                 <tbody>
@@ -118,7 +118,7 @@
                                 <h3 style="font-family: 'Lato';">$1500.00</h3>
                             </div>
                         </td>
-                        <td class="table-quantity">
+                        <td class="table-quantity" onclick="remove()">
                             <div class="td-cross">
                                 <svg id="mysvg" width="37" height="40" viewBox="0 0 37 40" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -127,7 +127,6 @@
                                         fill="#272727" />
                                 </svg>
                             </div>
-
                         </td>
                     </tr>
 
@@ -153,7 +152,7 @@
                                 <h3 style="font-family: 'Lato';">$1500.00</h3>
                             </div>
                         </td>
-                        <td class="table-quantity">
+                        <td class="table-quantity" onclick="remove()">
                             <div class="td-cross">
                                 <svg id="mysvg" width="37" height="40" viewBox="0 0 37 40" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -186,7 +185,7 @@
                 <p>SUBTOTAL</p>
                 <p style="color: #72AEC8;">$1500.00</p>
             </div>
-    
+
             <div class="line mb-4">
             </div>
             <div class="carttotal-table">
@@ -194,7 +193,7 @@
                 <p style="color: #72AEC8;">$1500.00</p>
             </div>
             <div class="line mb-3"></div>
-           
+
             <div class="carttotal-buttons ">
                 <button type="button" class="btn btn-dark">UPDATE CART</button>
                 <button type="button" class="btn btn-dark">CONTINUE SHOPPING</button>
@@ -377,6 +376,7 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="public/script.js"></script>
 
 </body>
