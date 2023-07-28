@@ -50,3 +50,36 @@ for (let button of removeButtons) {
   })
 }
 }
+
+//local storage
+// Function to get the current quantity from local storage
+function getStoredQuantity() {
+  const storedQuantity = localStorage.getItem('productQuantity');
+  return storedQuantity ? parseInt(storedQuantity) : 0;
+}
+
+// Function to update the displayed quantity and store it in local storage
+function updateQuantityDisplayAndStorage(quantity) {
+  document.getElementsByClassName('quantity')[0].textContent = quantity;
+  localStorage.setItem('productQuantity', quantity);
+}
+
+// Function to handle the "decrement" button click
+document.querySelector('.decrement').addEventListener('click', function () {
+  let quantity = getStoredQuantity();
+  if (quantity > 0) {
+    quantity -= 1;
+    updateQuantityDisplayAndStorage(quantity);
+  }
+});
+
+// Function to handle the "increment" button click
+document.querySelector('.increment').addEventListener('click', function () {
+  let quantity = getStoredQuantity();
+  quantity += 1;
+  updateQuantityDisplayAndStorage(quantity);
+});
+
+// Initialize the quantity display when the page loads
+const initialQuantity = getStoredQuantity();
+updateQuantityDisplayAndStorage(initialQuantity);
