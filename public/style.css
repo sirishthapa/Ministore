@@ -20,6 +20,12 @@ a {
 	text-decoration: none !important;
   }
 
+  #home{
+	position: sticky;
+	top: 0;
+	z-index: 999;
+  }
+
 .bignavbar {
 	display: flex;
 	align-items: center;
